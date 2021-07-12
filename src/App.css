@@ -1,0 +1,22 @@
+@import '~antd/dist/antd.css';
+
+.site-layout-content {
+    min-height: 280px;
+    padding: 24px;
+    background: #fff;
+    text-align: center;
+}
+
+.card-layout-content {
+    padding: 30px;
+    background: #ececec;
+}
+
+.card-layout-content-white {
+    padding: 30px;
+    background: #ffffff;
+}
+
+.App {
+    text-align: center;
+}
