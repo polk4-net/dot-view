@@ -8,8 +8,7 @@ import {
     Tag,
     Typography,
     Button,
-    Descriptions,
-    List, Avatar
+    List,
 } from 'antd';
 
 import {LoadingOutlined, CloseCircleOutlined, UserAddOutlined, SyncOutlined} from '@ant-design/icons';
@@ -17,7 +16,7 @@ import {mnemonicGenerate} from '@polkadot/util-crypto';
 import {Keyring} from '@polkadot/keyring';
 import Identicon from '@polkadot/react-identicon';
 
-const {Paragraph, Text, Title} = Typography;
+const {Paragraph, Text} = Typography;
 
 function Dashboard() {
     const [api, setApi] = useState(null);
@@ -27,48 +26,7 @@ function Dashboard() {
     const [newAddress, setNewAddress] = useState('');
     const [verifyingNewAccountLoading, setVerifyingNewAccountLoading] = useState(false);
     const [newAccountBalance, setNewAccountBalance] = useState(-1);
-    const [accountsWithBalances, setAccountsWithBalances] = useState([
-        {
-        address: '13HyS6FJhDsttvouQ1hERXv2v6MJinPhKdHbDFp5m79K9DRj',
-        balance: 0
-    },
-        {
-            address: '13HyS6FJhDsttvouQ1hERXv2v6MJinPhKdHbDFp5m79K9DRj',
-            balance: 0
-        },
-        {
-            address: '13HyS6FJhDsttvouQ1hERXv2v6MJinPhKdHbDFp5m79K9DRj',
-            balance: 0
-        },
-        {
-            address: '13HyS6FJhDsttvouQ1hERXv2v6MJinPhKdHbDFp5m79K9DRj',
-            balance: 0
-        },
-        {
-            address: '13HyS6FJhDsttvouQ1hERXv2v6MJinPhKdHbDFp5m79K9DRj',
-            balance: 0
-        },
-        {
-            address: '13HyS6FJhDsttvouQ1hERXv2v6MJinPhKdHbDFp5m79K9DRj',
-            balance: 0
-        },
-        {
-            address: '13HyS6FJhDsttvouQ1hERXv2v6MJinPhKdHbDFp5m79K9DRj',
-            balance: 0
-        },
-        {
-            address: '13HyS6FJhDsttvouQ1hERXv2v6MJinPhKdHbDFp5m79K9DRj',
-            balance: 0
-        },
-        {
-            address: '13HyS6FJhDsttvouQ1hERXv2v6MJinPhKdHbDFp5m79K9DRj',
-            balance: 0
-        },
-        {
-            address: '13HyS6FJhDsttvouQ1hERXv2v6MJinPhKdHbDFp5m79K9DRj',
-            balance: 0
-        }
-    ]);
+    const [accountsWithBalances, setAccountsWithBalances] = useState([]);
     const [generatedAddress, setGeneratedAddress] = useState('');
     const [generatedMnemonic, setGeneratedMnemonic] = useState('');
     const [chain, setChain] = useState('');

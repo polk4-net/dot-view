@@ -1,6 +1,6 @@
-# ⛓ POLK4.NET Web application ⛓
+# ⛓ DotView - Polkadot viewer for Chrome⛓
 
-[POLK4.NET](https://polk4.net) is a PolkaDOT block-chain exploration platform which aims to provide services on top of the network such as discovery, automation and wallet management.
+DotView is designed to become a toolset of features for interaction with Polkadot - straight from your Chrome Browser.
 
 This project is using [React](https://reactjs.org/) flavoured with [ANT design](https://ant.design/).
 
