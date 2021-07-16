@@ -36,7 +36,7 @@ Your app is ready to be deployed!
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ## License
-polk4-web is [MIT licensed](LICENSE)
+dotview is [MIT licensed](LICENSE)
 
 ## Thanks!
 * [Surya Setiyaputra](https://github.com/suryast) for logo design 🎨
